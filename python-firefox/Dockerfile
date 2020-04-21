@@ -8,5 +8,7 @@ RUN apt-get update && \
   rm requirements.txt && \
   useradd testuser --shell /bin/bash --create-home ;
 
+RUN mkdir /.cache && chmod a+w /.cache ;
+
 USER testuser
 
